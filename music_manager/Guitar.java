@@ -1,7 +1,7 @@
 package music_manager;
 import behaviours.*;
 
-public class Guitar extends Instrument implements Playable {
+public class Guitar extends Instrument implements Playable, Sellable{
 
   private int numberOfStrings;
 
@@ -16,6 +16,10 @@ public class Guitar extends Instrument implements Playable {
 
   public int numberOfStrings(){
     return this.numberOfStrings;
+  }
+
+  public int salePrice(int distance) {
+    return purchasePrice + this.markUp;
   }
 
 }

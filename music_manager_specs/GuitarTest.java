@@ -16,4 +16,9 @@ public class GuitarTest {
     assertEquals(6, guitar.numberOfStrings());
   }
 
+  @Test
+  public void hasSalePrice() {
+    assertEquals(10, guitar.salePrice());
+  }
+
 }

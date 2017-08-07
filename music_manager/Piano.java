@@ -6,7 +6,7 @@ public class Piano extends Instrument implements Playable{
   private String pianoType;
 
   public Piano(String instrumentMaterial, String pianoType){
-    super(instrumentMaterial);
+    this.material = super(instrumentMaterial);
     this.pianoType = pianoType;
   }
 
@@ -14,8 +14,8 @@ public class Piano extends Instrument implements Playable{
     return this.pianoType;
   }
 
-  public String playSound(String sound){
-    return sound + " played on " + this.instrumentMaterial + " " + this.pianoType;
+  public String material(String sound){
+    return this.material;
   }
 
 }
